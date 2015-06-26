@@ -15,7 +15,7 @@ describe('dynamic loading', function() {
         yield browser.click('button=Start');
         yield browser.waitForExist('#finish', 10000);
         yield browser.isExisting('#finish').then(function(isExisting) {
-            expect(isExisting).toBe(true);
+            expect(isExisting).toBe(false);
         });
     });
 
