@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/christian-bromann/wdio-demo",
   "dependencies": {
+    "jasmine": "^2.3.1",
     "webdriverio": "git://github.com/webdriverio/webdriverio"
   }
 }
