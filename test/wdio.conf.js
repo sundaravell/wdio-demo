@@ -1,4 +1,4 @@
-var BUILD_ID = new Date().getTime();
+var BUILD_ID = process.env.TRAVIS_BUILD_ID || new Date().getTime();
 
 exports.config = {
 
