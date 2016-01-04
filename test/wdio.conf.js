@@ -10,8 +10,8 @@ exports.config = {
     // according to your user and key information. However if you are using a private Selenium
     // backend you should define the host address and port here.
     //
-    // host: '0.0.0.0',
-    // port: 4444,
+    host: '0.0.0.0',
+    port: 4445,
     //
     // =================
     // Service Providers
@@ -125,15 +125,7 @@ exports.config = {
     // Test reporter for stdout.
     // The following are supported: dot (default), spec and xunit
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporter: 'xunit',
-    //
-    // Some reporter require additional information which should get defined here
-    reporterOptions: {
-        //
-        // If you are using the "xunit" reporter you should define the directory where
-        // WebdriverIO should save all unit reports.
-        outputDir: './'
-    },
+    reporter: 'spec',
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -150,35 +142,5 @@ exports.config = {
         // Make use of jasmine specific grep functionality
         // grep: null,
         // invertGrep: null
-    },
-    //
-    // =====
-    // Hooks
-    // =====
-    // Run functions before or after the test. If one of them return with a promise, WebdriverIO
-    // will wait until that promise got resolved to continue.
-    // see also: http://webdriver.io/guide/testrunner/hooks.html
-    //
-    // Gets executed before all workers get launched.
-    // onPrepare: function() {
-    //     console.log('let\'s go');
-    // },
-    //
-    // Gets executed before test execution begins. At this point you will have access to all global
-    // variables like `browser`. It is the perfect place to define custom commands.
-    // before: function() {
-    //     console.log('run the tests');
-    // },
-    //
-    // Gets executed after all tests are done. You still have access to all global variables from
-    // the test.
-    // after: function() {
-    //     console.log('finish up the tests');
-    // },
-    //
-    // Gets executed after all workers got shut down and the process is about to exit. It is not
-    // possible to defer the end of the process using a promise.
-    // onComplete: function() {
-    //     console.log('that\'s it');
-    // }
+    }
 };

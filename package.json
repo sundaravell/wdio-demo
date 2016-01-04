@@ -4,7 +4,7 @@
   "description": "demo project to test WebdriverIO integration with Jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/wdio test/wdio.conf.js"
+    "test": "wdio test/wdio.conf.js"
   },
   "repository": {
     "type": "git",
