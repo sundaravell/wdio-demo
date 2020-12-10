@@ -130,7 +130,13 @@ exports.config = {
     // Test reporter for stdout.
     // The following are supported: dot (default), spec and xunit
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporter: 'dot',
+    //reporter: 'dot',
+    reporters: ['dot', 'junit'],
+    reporterOptions: {
+        junit: {
+            outputDir: './'
+        }
+    },
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
